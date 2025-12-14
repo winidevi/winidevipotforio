@@ -1,71 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winicius Martins | Desenvolvedor Front-End Júnior</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!--cabeçalho-->   
-    <header>
-     <h1>Winidevi | Portfório</h1>
-     <p>desenvolvedor Front end</p>        
-     <a href="">contato</a> 
-     <a href="">Git</a>  
-     <a href="">LInkedIn</a>
-    
-    </header>
-     
-     <main>
-        <!--seção sobre--> 
-        <section>
-             <h2>Sobre mim</h2>
-             <p>Olá me chamo Winicius, tenho 25 anos e sonho em entrar no mundo da tecnologia, tenho conhecimentos em desenvolvimento de web sites e landing page, tenho conhecimentos em python orientado a objetos e MySQL.</p> 
-        </section>
-        
-        <!--conhecimentos-->
-        <section>
-            <article> 
-            <h2>skills</h2>
-                <ul>
-                     <li>conhecimentos basicos em PHP</li>
-                     <li>conhecimento em Python orientado a objetos. </li>
-                     <li>HTML</li>
-                     <li>css</li>
-                     <li>Java Script</li>
-                </ul>
-            </article>
-        </section>
-       
-        <!--projetos-->    
-        <section>
-             <h2>Projetos</h2>
-                    <article>
-                        <h3>Cafeteria Mrcoffee</h3>
-                        <p>Um web site de uma cafeteria, focado em aprensentar o cardapio e fazer pesquisa de qualidade.  </p>
-                        <a href="">Ver projeto</a>     
-                    </article>           
-             
-                    <article>              
-                        <h3>FuriaGG</h3>                    
-                        <p>Uma landing page criada para mostrar tudo sobre um dos times da gigante Furia E-sports, com datas de treinos e curiosidades sobre o time escolhido.</p>
-                        <a href="">Ver projeto</a>                                    
-                    </article>
-                          
-                    <article>
-                       <h3>Meu primeiro web site</h3>
-                       <p>Um site que fala um pouco sobre mobile legends, mostrando como é o jogo e com uma nav para o site oficial do mb.</p>
-                       <a href="">Ver projeto</a>                 
-                    </article>     
- 
-    </main>
+
+  <header>
+    <div class="header-actions"></div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#" class="active" data-page="inicio">Início</a></li>
+        <li><a href="#" data-page="sobre">Sobre Mim</a></li>
+        <li><a href="#" data-page="projetos">Projetos</a></li>
+        <li><a href="#" data-page="contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+ <div class="perfil-header">
+  <img src="img/fotosperfil/foto-perfilwinidevi.jpeg" alt="Foto de perfil de Winicius Martins" class="foto-perfil">
+  <h1>Winicius Martins</h1>
+  <h2>Desenvolvedor Front-End | Júnior / Estágio</h2>
+</div>
+  <span class="badge">Buscando estágio / vaga júnior</span>
+    <section id="inicio" class="page active">
 
 
-<footer>&copy; Winidevi | 2025 todos os direitos reservados
-<a href="www.linkedin.com/in/winicius-felipe-b7596121a">LinKedln</a>
-<a href="">Github</a>
-</footer>
+      <h2>Olá! 👋 Seja bem-vindo ao meu portfólio</h2>
+
+      <p>
+        Sou desenvolvedor Front-End em início de carreira, com experiência prática em
+        <strong>HTML, CSS3 e JavaScript</strong>, atuando em projetos reais como freelancer.
+        Tenho foco em criar interfaces responsivas, organizadas e com boa experiência do usuário.
+      </p>
+
+      <p>
+        Atualmente estou aprofundando meus estudos em
+        <strong>React, Tailwind CSS, TypeScript e Node.js</strong>,
+        buscando minha primeira oportunidade como
+        <strong>estagiário ou desenvolvedor júnior</strong>.
+      </p>
+    </section>
+
+    <section id="sobre" class="page">
+      <h2>Sobre Mim</h2>
+
+      <p>
+        Sou estudante de Tecnologia da Informação e desenvolvedor Front-End.
+        Gosto de aprender na prática, transformar ideias em interfaces funcionais
+        e evoluir constantemente através de projetos reais.
+      </p>
+
+      <p>
+        Tenho facilidade para aprender novas tecnologias, trabalhar em equipe
+        e seguir boas práticas de código.
+      </p>
+    </section>
+
+    <section id="projetos" class="page">
+      <h2>Projetos</h2>
+      <p>Alguns projetos desenvolvidos durante estudos e trabalhos como freelancer:</p>
+
+      <ul>
+        <li>
+          <a href="https://gatilbastetfelix.netlify.app/" target="_blank">
+            <img src="img/projetos/gatilBastetFelix.jpeg" alt="Projeto Bastet Felix">
+          </a>
+          <p><strong>Bastet Felix</strong> – Site institucional desenvolvido com HTML, CSS e JavaScript.
+            Projeto real entregue a um cliente.</p>
+        </li>
+
+        <li>
+          <a href="https://jogodeadivinhacaoo.netlify.app/" target="_blank">
+            <img src="img/projetos/jogo-advinhacao.png" alt="Jogo de Adivinhação">
+          </a>
+          <p><strong>Jogo de Adivinhação</strong> – Projeto para prática de lógica e JavaScript.</p>
+        </li>
+
+        <li>
+          <a href="https://cadastrodelocradouro.netlify.app/" target="_blank">
+            <img src="img/projetos/Cadastrador-de-endereco.png" alt="Cadastro de Endereço">
+          </a>
+          <p><strong>Cadastro de Endereço</strong> – Formulário com foco em validação e estrutura.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contato" class="page">
+      <h2>Contato</h2>
+      <p>
+        Estou disponível para oportunidades de <strong>estágio</strong> ou
+        <strong>desenvolvedor júnior</strong>.
+      </p>
+
+      <p>
+        📧 E-mail: <strong>winicius.martinz@gmail.com</strong><br>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WiniDevi. Todos os direitos reservados.</p>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/winicius-felipe-b7596121a/" target="_blank">
+        <img src="icons/linkedin.png" alt="LinkedIn" class="icone">
+      </a>
+      <a href="https://github.com/winidevi" target="_blank">
+        <img src="icons/github.png" alt="GitHub" class="icone">
+      </a>
+      <a href="https://w.app/winiciusfelipe" target="_blank">
+        <img src="icons/whatsapp.png" alt="WhatsApp" class="icone">
+      </a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 
 </body>
+
 </html>
