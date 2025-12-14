@@ -1,11 +1,15 @@
-/* ===== RESET ===== */
+/* =====================================================
+   RESET
+===================================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ===== GLOBAL ===== */
+/* =====================================================
+   GLOBAL
+===================================================== */
 body {
     font-family: Arial, sans-serif;
     background: #f4f4f4;
@@ -22,24 +26,27 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ===== HEADER ===== */
+/* =====================================================
+   HEADER
+===================================================== */
 header {
     background: #35424a;
     color: white;
     padding: 20px;
     border-bottom: #e8491d 3px solid;
-    display: block;
+
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-
-/* ===== NAV ===== */
+/* =====================================================
+   NAV
+===================================================== */
 #nav-bar ul {
     list-style: none;
     display: flex;
     gap: 20px;
-
 }
 
 #nav-bar a {
@@ -47,37 +54,48 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
-    padding-bottom:0px;
-    list-style: none;
 }
 
 #nav-bar a.active {
     border-bottom: 2px solid #00a8ff;
 }
 
-/* ===== BOTÕES HEADER ===== */
+/* =====================================================
+   BOTÃO MENU MOBILE
+===================================================== */
 .menu-toggle {
     display: none;
-}
-
-/* ===== DARK MODE BUTTON ===== */
-.dark-toggle {
-    position: fixed;
-    top: 15px;
-    left: 15px;
     background: #00a8ff;
     color: white;
     border: none;
     padding: 10px 14px;
-    border-radius: 50%;
+    border-radius: 6px;
     font-size: 18px;
     cursor: pointer;
-    z-index: 1000;
-    position: fixed;
-    left: 95%;
 }
 
-/* ===== SPA ===== */
+/* =====================================================
+   BOTÃO DARK MODE
+===================================================== */
+.dark-mode-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    border: none;
+    background: none;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.dark-mode-button:hover {
+    transform: scale(1.2);
+}
+
+/* =====================================================
+   SPA
+===================================================== */
 .page {
     display: none;
     max-width: 1100px;
@@ -89,7 +107,28 @@ header {
     display: block;
 }
 
-/* ====inicio==== */
+/* =====================================================
+   PERFIL / TOPO
+===================================================== */
+.perfil-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0 40px;
+    text-align: center;
+}
+
+.perfil-header img.foto-perfil {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 15px;
+}
+
+/* =====================================================
+   INÍCIO
+===================================================== */
 #inicio {
     min-height: 100vh;
     display: flex;
@@ -97,7 +136,6 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-
 }
 
 h1 {
@@ -113,24 +151,13 @@ h2 {
 p {
     max-width: 800px;
     margin-bottom: 15px;
+    font-size: 18px;
+    text-align: center;
 }
 
-/* ===== BADGE ===== */
-.badge {
-    background: #50a3cc;
-    color: white;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-size: 16px;
-    margin-top: 15px;
-    display: inline-block;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    top: 75px;
-    left: 610px;
-}
-
-/* ===== PROJETOS ===== */
+/* =====================================================
+   PROJETOS
+===================================================== */
 #projetos ul {
     list-style: none;
     display: grid;
@@ -143,13 +170,13 @@ p {
     background: white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 #projetos li:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 #projetos img {
@@ -158,7 +185,9 @@ p {
     object-fit: cover;
 }
 
-/* ===== FOOTER ===== */
+/* =====================================================
+   FOOTER
+===================================================== */
 footer {
     background: #35424a;
     color: white;
@@ -184,7 +213,9 @@ footer p {
     transform: scale(1.2);
 }
 
-/* ===== ANIMAÇÃO ===== */
+/* =====================================================
+   ANIMAÇÃO
+===================================================== */
 .fade-in {
     animation: fade 0.6s ease-in-out;
 }
@@ -194,14 +225,15 @@ footer p {
         opacity: 0;
         transform: translateY(10px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* ===== DARK MODE ===== */
+/* =====================================================
+   DARK MODE
+===================================================== */
 body.dark {
     background: #121212;
     color: #f1f1f1;
@@ -216,56 +248,60 @@ body.dark h2 {
     color: #f1f1f1;
 }
 
+body.dark #nav-bar a {
+    color: #f1f1f1;
+}
+
 body.dark #projetos li {
     background: #1f1f1f;
 }
 
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
+/* ==============================
+   NAV - DESKTOP
+============================== */
+#nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
 
+/* ==============================
+   BOTÃO MENU MOBILE
+============================== */
+.menu-toggle {
+    display: none;
+    background: #00a8ff;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* ==============================
+   MOBILE
+============================== */
+@media (max-width: 450px) {
+
+    /* ESCONDE MENU DESKTOP */
     #nav-bar ul {
         display: none;
         flex-direction: column;
         width: 100%;
-        margin-top: 15px;
         background: #35424a;
+        margin-top: 15px;
         padding: 10px 0;
     }
 
+    /* MOSTRA MENU QUANDO ABERTO */
     #nav-bar ul.open {
         display: flex;
     }
 
+    /* MOSTRA BOTÃO HAMBURGUER */
     .menu-toggle {
         display: block;
-        background: #00a8ff;
-        color: white;
-        border: none;
-        padding: 10px 14px;
-        border-radius: 6px;
-        font-size: 18px;
-        margin-top: 10px;
-        cursor: pointer;
+        margin: 15px 0;
     }
-}
-
-main div.perfil-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 100px;
-}
-
-main div.perfil-header img.foto-perfil {
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    border: 4px solid white;
-    margin-bottom: 15px;
-    position: relative;
 }

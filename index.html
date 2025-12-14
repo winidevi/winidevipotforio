@@ -11,25 +11,32 @@
 <body>
 
   <header>
-    <div class="header-actions"></div>
-    <nav id="nav-bar">
-      <ul>
-        <li><a href="#" class="active" data-page="inicio">Início</a></li>
-        <li><a href="#" data-page="sobre">Sobre Mim</a></li>
-        <li><a href="#" data-page="projetos">Projetos</a></li>
-        <li><a href="#" data-page="contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="header-left">
+    <button id="darkModeBtn" class="dark-mode-button">🌙</button>
+  </div>
+
+  <nav id="nav-bar">
+    <ul>
+      <li><a href="#" class="active" data-page="inicio">Início</a></li>
+      <li><a href="#" data-page="sobre">Sobre Mim</a></li>
+      <li><a href="#" data-page="projetos">Projetos</a></li>
+      <li><a href="#" data-page="contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="header-actions"></div>
+  <button class="menu-toggle">☰</button>
+</header>
+
 
   <main>
 
- <div class="perfil-header">
-  <img src="img/fotosperfil/foto-perfilwinidevi.jpeg" alt="Foto de perfil de Winicius Martins" class="foto-perfil">
-  <h1>Winicius Martins</h1>
-  <h2>Desenvolvedor Front-End | Júnior / Estágio</h2>
-</div>
-  <span class="badge">Buscando estágio / vaga júnior</span>
+    <div class="perfil-header">
+      <img src="img/fotosperfil/foto-perfilwinidevi.jpeg" alt="Foto de perfil de Winicius Martins" class="foto-perfil">
+      <h1>Winicius Martins</h1>
+      <h2>Desenvolvedor Front-End | Júnior / Estágio</h2>
+    </div>
+
     <section id="inicio" class="page active">
 
 
@@ -81,7 +88,7 @@
           <a href="https://jogodeadivinhacaoo.netlify.app/" target="_blank">
             <img src="img/projetos/jogo-advinhacao.png" alt="Jogo de Adivinhação">
           </a>
-          <p><strong>Jogo de Adivinhação</strong> – Projeto para prática de lógica e JavaScript.</p>
+          <p><strong>Jogo de Adivinhação</strong> – Projeto para prática de lógica.</p>
         </li>
 
         <li>
